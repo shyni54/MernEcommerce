@@ -1,5 +1,5 @@
 const express = require("express") 
-const Cart= require("../models/cart")
+const Cart= require("../models/Cart")
 const {protect} = require("../middleware/authMiddleware")
 const router=express.Router() 
 router.post("/add",protect,async (req,res)=>{
